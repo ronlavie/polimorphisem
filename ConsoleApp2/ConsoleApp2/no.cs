@@ -70,5 +70,14 @@ namespace Task1_RonLavie
             }
           
         }
-    }
+        public static int BigAhhHippo(Animal[] animal)
+        {
+            int mammlenum = 0;
+            foreach (Animal item in animal)
+            {
+                if (item is Mammal)
+                    mammlenum++;
+            }
+            return mammlenum;
+        }
 }

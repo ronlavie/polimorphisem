@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class Bird:Animal
+    internal class Bird:Animal,IBird
     {
         protected int high;
         protected int wingspan;
@@ -29,6 +29,18 @@ namespace ConsoleApp2
         public void dance()
         {
             Console.WriteLine("\0/");
+        }
+        public void fly()
+        {
+            Console.WriteLine("[0]");
+        }
+        public void land()
+        {
+            Console.WriteLine("bird landed");
+        }
+        public void rise()
+        {
+            Console.WriteLine("*sounds of taking of*");
         }
     }
 }
